@@ -46,11 +46,3 @@ class TikTokDownloader:
         if src and src.startswith('//'):
             src = 'https:' + src
         return src
-
-# Example usage:
-downloader = TikTokDownloader()
-content, content_type = downloader.download_content('https://www.tiktok.com/@fodspel/photo/7412579301087907088')
-if content_type == 'video':
-    print(f"Video URL: {content}")
-elif content_type == 'image':
-    print(f"Image URLs: {content}")

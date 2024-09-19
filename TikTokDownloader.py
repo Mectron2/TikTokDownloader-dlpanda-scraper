@@ -3,11 +3,9 @@ import urllib.parse
 from bs4 import BeautifulSoup
 
 class TikTokDownloader:
-    def __init__(self, token='G7eRpMaa'):
+    def __init__(self, token='G7eRpMaa', headers = {}):
         self.token = token
-        self.headers = {
-            # Your headers here
-        }
+        self.headers = headers
     
     def encode_url(self, url: str) -> str:
         """Encode URL for safe HTTP request"""
